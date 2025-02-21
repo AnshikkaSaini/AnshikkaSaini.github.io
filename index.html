@@ -3,30 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Bento Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>A showcase of my projects and skills</p>
+<body class="bg-gray-100 text-gray-900">
+    
+    <header class="text-center py-10">
+        <h1 class="text-4xl font-bold">Your Name</h1>
+        <p class="text-lg text-gray-600">Web Developer | Designer | Creator</p>
     </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>Hi, I'm [Your Name]. I'm a [Your Profession] specializing in [Your Skills].</p>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/your-username/project1">Project 1</a></li>
-            <li><a href="https://github.com/your-username/project2">Project 2</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>Contact me at: your.email@example.com</p>
+    
+    <main class="max-w-5xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <div class="bg-white p-6 rounded-2xl shadow-md md:col-span-2">
+                <h2 class="text-2xl font-semibold">About Me</h2>
+                <p class="mt-2 text-gray-700">I'm a passionate developer specializing in modern web technologies.</p>
+            </div>
+            
+            <div class="bg-blue-500 text-white p-6 rounded-2xl shadow-md">
+                <h2 class="text-xl font-semibold">Contact</h2>
+                <p class="mt-2">your.email@example.com</p>
+            </div>
+            
+            <div class="bg-yellow-400 p-6 rounded-2xl shadow-md">
+                <h2 class="text-xl font-semibold">Project 1</h2>
+                <p class="mt-2">A cool web app I built.</p>
+                <a href="#" class="underline">View Project</a>
+            </div>
+            
+            <div class="bg-green-400 p-6 rounded-2xl shadow-md">
+                <h2 class="text-xl font-semibold">Project 2</h2>
+                <p class="mt-2">A creative design showcase.</p>
+                <a href="#" class="underline">View Project</a>
+            </div>
+            
+            <div class="bg-red-400 p-6 rounded-2xl shadow-md md:col-span-2">
+                <h2 class="text-xl font-semibold">Blog</h2>
+                <p class="mt-2">Sharing my thoughts on web development.</p>
+                <a href="#" class="underline">Read More</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="text-center py-6 mt-10 text-gray-600">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
+    
 </body>
 </html>
