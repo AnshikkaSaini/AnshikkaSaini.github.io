@@ -1,47 +1,72 @@
-<!DOCTYPE html>
+x<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bento Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;600&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        h1, h2 { font-family: 'Merriweather', serif; }
+        
+        /* Typewriter Animation */
+        .typewriter {
+            display: inline-block;
+            overflow: hidden;
+            border-right: .15em solid #000;
+            white-space: nowrap;
+            animation: typing 3s steps(30, end) forwards, blink .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+    </style>
 </head>
 <body class="bg-pink-100 text-gray-900">
     
     <header class="text-center py-10">
-        <h1 class="text-4xl font-bold">Anshika Saini</h1>
-        <p class="text-lg text-gray-600">Game Developer</p>
+        <h1 class="text-4xl font-bold typewriter">Anshika Saini</h1>
+        <p class="text-lg text-gray-600 typewriter">Game Developer</p>
     </header>
     
     <main class="max-w-5xl mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             
-            <div class="bg-white p-6 rounded-2xl shadow-md md:col-span-2 flex flex-col items-center">
-                <img src="your-image.jpg" alt="Your Image" class="w-32 h-32 rounded-full mb-4">
+            <div class="bg-white p-6 rounded-2xl shadow-md md:col-span-2 md:row-span-2 flex flex-col items-center">
+                <img src="your-image.jpg" alt="Your Image" class="w-40 h-40 rounded-full mb-4">
                 <h2 class="text-2xl font-semibold">About Me</h2>
-                <p class="mt-2 text-gray-700">I'm a passionate Game Developer specializing in modern game technologies.</p>
-            </div>
-            
-            <div class="bg-pink-300 text-white p-6 rounded-2xl shadow-md">
-                <h2 class="text-xl font-semibold">Contact</h2>
+                <p class="mt-2 text-gray-700 text-center">I'm a passionate Game Developer specializing in modern game technologies.</p>
+                <h2 class="text-xl font-semibold mt-4">Contact</h2>
                 <p class="mt-2">your.email@example.com</p>
             </div>
             
-            <div class="bg-blue-300 p-6 rounded-2xl shadow-md">
-                <img src="project1.jpg" alt="Project 1" class="w-full h-32 object-cover rounded-lg mb-2">
-                <h2 class="text-xl font-semibold">Project 1</h2>
-                <p class="mt-2">A cool web app I built with unique mechanics and gameplay.</p>
-                <button class="mt-2 px-4 py-2 bg-white text-blue-600 rounded-lg">View Project</button>
+            <div class="bg-blue-300 p-8 rounded-2xl shadow-md md:col-span-2">
+                <h2 class="text-xl font-semibold">2D Mobile Game</h2>
+                <div class="flex space-x-2 mt-2">
+                    <img src="project1.jpg" alt="Project 1" class="w-1/2 h-40 object-cover rounded-lg">
+                    <img src="project1b.jpg" alt="Project 1" class="w-1/2 h-40 object-cover rounded-lg">
+                </div>
+                <p class="mt-2">A cool 2D mobile game with unique mechanics and gameplay.</p>
+                <button class="mt-2 px-6 py-2 bg-white text-blue-600 rounded-lg">View Project</button>
             </div>
             
-            <div class="bg-pink-200 p-6 rounded-2xl shadow-md">
-                <img src="project2.jpg" alt="Project 2" class="w-full h-32 object-cover rounded-lg mb-2">
-                <h2 class="text-xl font-semibold">Project 2</h2>
+            <div class="bg-pink-200 p-8 rounded-2xl shadow-md md:col-span-2">
+                <h2 class="text-xl font-semibold">2D Adventure Game</h2>
+                <div class="flex space-x-2 mt-2">
+                    <img src="project2.jpg" alt="Project 2" class="w-1/2 h-40 object-cover rounded-lg">
+                    <img src="project2b.jpg" alt="Project 2" class="w-1/2 h-40 object-cover rounded-lg">
+                </div>
                 <p class="mt-2">An immersive experience showcasing creative game design.</p>
-                <button class="mt-2 px-4 py-2 bg-white text-pink-600 rounded-lg">View Project</button>
+                <button class="mt-2 px-6 py-2 bg-white text-pink-600 rounded-lg">View Project</button>
             </div>
             
-            <div class="bg-blue-200 p-6 rounded-2xl shadow-md md:col-span-2">
+            <div class="bg-blue-200 p-6 rounded-2xl shadow-md md:col-span-3">
                 <h2 class="text-xl font-semibold">Blog</h2>
                 <p class="mt-2">Sharing my thoughts on game development and industry trends.</p>
                 <a href="#" class="underline block mt-2">Read More</a>
@@ -55,4 +80,3 @@
     
 </body>
 </html>
-
