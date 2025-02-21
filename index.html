@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+x<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bento Portfolio</title>
+    
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Add TailwindCSS via CDN (can be moved to your JS file if desired) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;600&display=swap');
-        body { font-family: 'Poppins', sans-serif; }
-        h1, h2 { font-family: 'Merriweather', serif; }
-    </style>
 </head>
 <body class="bg-pink-100 text-gray-900">
     
     <header class="text-center py-10">
-        <img src="Profile Picture.jpg" alt="Anshika Saini" class="w-40 h-40 rounded-full mx-auto mb-4">
+        <img src="images/Profile Picture.jpg" alt="Anshika Saini" class="w-40 h-40 rounded-full mx-auto mb-4">
         <h1 class="text-4xl font-bold">Anshika Saini</h1>
         <p class="text-lg text-gray-600">Game Developer</p>
     </header>
@@ -32,8 +32,8 @@
             <div class="bg-blue-300 p-8 rounded-2xl shadow-md md:col-span-2">
                 <h2 class="text-xl font-semibold">2D Mobile Game</h2>
                 <div class="flex space-x-2 mt-2">
-                    <img src="project1.jpg" alt="Project 1" class="w-1/2 h-40 object-cover rounded-lg">
-                    <img src="project1b.jpg" alt="Project 1" class="w-1/2 h-40 object-cover rounded-lg">
+                    <img src="images/project1.jpg" alt="Project 1" class="w-1/2 h-40 object-cover rounded-lg">
+                    <img src="images/project1b.jpg" alt="Project 1" class="w-1/2 h-40 object-cover rounded-lg">
                 </div>
                 <p class="mt-2">A cool 2D mobile game with unique mechanics and gameplay.</p>
                 <button class="mt-2 px-6 py-2 bg-white text-blue-600 rounded-lg">View Project</button>
@@ -42,8 +42,8 @@
             <div class="bg-pink-200 p-8 rounded-2xl shadow-md md:col-span-2">
                 <h2 class="text-xl font-semibold">2D Adventure Game</h2>
                 <div class="flex space-x-2 mt-2">
-                    <img src="project2.jpg" alt="Project 2" class="w-1/2 h-40 object-cover rounded-lg">
-                    <img src="project2b.jpg" alt="Project 2" class="w-1/2 h-40 object-cover rounded-lg">
+                    <img src="images/project2.jpg" alt="Project 2" class="w-1/2 h-40 object-cover rounded-lg">
+                    <img src="images/project2b.jpg" alt="Project 2" class="w-1/2 h-40 object-cover rounded-lg">
                 </div>
                 <p class="mt-2">An immersive experience showcasing creative game design.</p>
                 <button class="mt-2 px-6 py-2 bg-white text-pink-600 rounded-lg">View Project</button>
@@ -61,5 +61,7 @@
         <p>&copy; 2025 Anshika Saini. Game Developer. All rights reserved.</p>
     </footer>
     
+    <!-- Link to External JavaScript File -->
+    <script src="js/script.js"></script>
 </body>
 </html>
